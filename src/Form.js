@@ -37,7 +37,7 @@ export default function Form() {
   }
 
   let form = (
-    <form id="search-form">
+    <form id="search-form" onSubmit={getData}>
       <div className="row">
         <span className="col-lg-7">
           <input
@@ -46,6 +46,7 @@ export default function Form() {
             className="form-control"
             id="city-input"
             autocomplete="off"
+            onChange={updateCity}
           />
         </span>
 
@@ -53,15 +54,11 @@ export default function Form() {
           <input
             type="submit"
             value="Search"
-            className="btn btn-primary search-display"
+            class="btn btn-primary search-display"
           />
         </span>
-        <span className="col-lg-2 serach-engine-buttons">
-          <input
-            type="button"
-            value="My location"
-            className="my-location-button"
-          />
+        <span class="col-lg-2 serach-engine-buttons">
+          <input type="button" value="My location" class="my-location-button" />
         </span>
       </div>
     </form>
