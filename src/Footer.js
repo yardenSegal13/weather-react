@@ -7,6 +7,7 @@ export default function Footer() {
       <a
         href="https://github.com/yardenSegal13?tab=repositories"
         target="_blank"
+        rel="noreferrer"
       >
         Yarden Segal
       </a>

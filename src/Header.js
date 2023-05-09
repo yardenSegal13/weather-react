@@ -10,11 +10,11 @@ export default function Header(props) {
         <img src={props.icon} alt="weather-icon" id="icon" />
         <strong id="temp">{props.temperature}</strong>
         <small>
-          <a href="#" id="celsius" className="active unit">
+          <a href="/" id="celsius" className="active unit">
             °C
           </a>
           |
-          <a href="#" id="fahrenheit" className="unit">
+          <a href="/" id="fahrenheit" className="unit">
             °F
           </a>
         </small>
